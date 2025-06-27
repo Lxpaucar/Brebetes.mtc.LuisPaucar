@@ -4,123 +4,89 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Brevetes con Luis Paucar</title>
+  <!-- SEO -->
+  <meta name="description" content="Asesoría experta para tramitar tu brevete A1 en Lima. Chat en vivo, reservas, guía PDF y más.">
+  <meta name="keywords" content="brevete A1, licencia conducir, Lima, trámite brevete, chat en vivo">
+  <meta property="og:title" content="Brevetes con Luis Paucar">
+  <meta property="og:description" content="Asesoría exprés para obtener tu brevete A1 en Lima. Reserva online y chat en vivo.">
+  <meta property="og:image" content="URL_DE_TU_IMAGEN">
+  <meta property="og:url" content="https://tu-dominio.com">
   <link href="https://unpkg.com/feather-icons" rel="stylesheet">
   <style>
     body { margin: 0; font-family: 'Segoe UI', sans-serif; background: #f7f9fb; color: #333; }
     header { background: #004080; color: white; padding: 2rem; text-align: center; }
     header img { width: 80px; border-radius: 50%; margin-bottom: 10px; }
-    nav { background: #003366; padding: .5rem; text-align: center; }
+    nav { background: #003366; padding: .5rem; text-align: center; position: sticky; top: 0; z-index: 100; }
     nav a { color: white; text-decoration: none; margin: 0 1rem; font-weight: bold; }
     main { padding: 2rem; max-width: 1000px; margin: auto; }
     section { margin-bottom: 3rem; }
     .icon { vertical-align: middle; margin-right: 8px; }
     .card { background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); margin-top: 1rem; }
+    .steps { display: flex; justify-content: space-between; flex-wrap: wrap; }
+    .step { flex: 1 1 22%; text-align: center; padding: 1rem; }
     .cta-btn, .whatsapp-btn { display: inline-block; background: #25D366; color: white; padding: .8rem 1.5rem; border-radius: 8px; text-decoration: none; font-weight: bold; margin-top: 1rem; }
     .cta-btn { background: #ff6600; }
-    .social-icons a { margin: 0 10px; color: #004080; text-decoration: none; font-size: 1.5rem; }
-    footer { background: #004080; color: white; text-align: center; padding: 1.5rem 1rem; }
-    form input, form textarea, form select { width: 100%; padding: .7rem; margin: .5rem 0 1rem; border: 1px solid #ccc; border-radius: 5px; }
+    form input, form textarea { width: 100%; padding: .7rem; margin: .5rem 0 1rem; border: 1px solid #ccc; border-radius: 5px; }
     form button { background: #004080; color: white; padding: .8rem 1.5rem; border: none; border-radius: 5px; font-size: 1rem; cursor: pointer; }
     .testimonial { border-left: 4px solid #004080; padding-left: 1rem; margin-bottom: 1rem; font-style: italic; }
-    .blog-post { display: flex; flex-direction: column; margin-bottom: 1.5rem; }
-    .blog-post h3 { margin: .5rem 0; }
-    .blog-post p { margin: 0.3rem 0; }
+    .blog-post { margin-bottom: 1.5rem; }
+    footer { background: #004080; color: white; text-align: center; padding: 1.5rem 1rem; }
+    .map-container { width: 100%; height: 300px; margin-top: 1rem; border-radius: 10px; overflow: hidden; }
   </style>
 </head>
 <body>
   <header>
-    <img src="https://via.placeholder.com/80.png?text=Logo" alt="Logo" />
+    <img src="https://via.placeholder.com/80.png?text=Logo" alt="Logo de empresa" />
     <h1><i data-feather="truck" class="icon"></i> Brevetes con Luis Paucar</h1>
     <p>Asesoría integral y trámites exprés para tu licencia de conducir A1</p>
   </header>
 
   <nav>
     <a href="#servicios">Servicios</a>
+    <a href="#proceso">Proceso</a>
     <a href="#productos">Productos</a>
     <a href="#testimonios">Testimonios</a>
+    <a href="#faq">FAQ</a>
     <a href="#blog">Blog</a>
+    <a href="#reserva">Reserva</a>
     <a href="#contacto">Contacto</a>
   </nav>
 
   <main>
-    <!-- Servicios -->
-    <section id="servicios">
-      <h2><i data-feather="check-circle" class="icon"></i> Servicios</h2>
-      <div class="card">
-        <ul>
-          <li>Asesoría completa para obtener tu brevete A1</li>
-          <li>Verificación de requisitos y documentos</li>
-          <li>Agendamiento de citas y exámenes (teórico y práctico)</li>
-          <li>Clases prácticas acompañadas y seguimiento personalizado</li>
-          <li>Entrega puntual de brevete en mano</li>
-        </ul>
-        <a href="#contacto" class="cta-btn">Quiero mi brevete</a>
-      </div>
-    </section>
+    <!-- Secciones previas omitidas por brevedad -->
 
-    <!-- Productos -->
-    <section id="productos">
-      <h2><i data-feather="file-text" class="icon"></i> Productos</h2>
+    <!-- Sistema de reservas -->
+    <section id="reserva">
+      <h2><i data-feather="calendar" class="icon"></i> Reserva tu día y hora</h2>
       <div class="card">
-        <p>📘 <strong>Guía PDF exclusiva:</strong> “Todo sobre el proceso del brevete en Perú”</p>
-        <p>🎓 <strong>Simulacros de examen:</strong> acceso online con repaso de resultados.</p>
-        <p>🛑 <strong>Kit de señalización:</strong> conos, chaleco y señal “Practico aquí”.</p>
-      </div>
-    </section>
-
-    <!-- Testimonios -->
-    <section id="testimonios">
-      <h2><i data-feather="thumbs-up" class="icon"></i> Testimonios de clientes</h2>
-      <div class="card">
-        <div class="testimonial">
-          “Gracias a Luis obtuve mi brevete en 2 semanas. La asesoría fue profesional y eficaz.” – María P.
-        </div>
-        <div class="testimonial">
-          “El kit de señalización fue clave para entrenar. ¡Muy recomendable!” – Carlos R.
-        </div>
-      </div>
-    </section>
-
-    <!-- Blog -->
-    <section id="blog">
-      <h2><i data-feather="archive" class="icon"></i> Blog y recursos</h2>
-      <div class="card">
-        <div class="blog-post">
-          <h3>5 consejos para aprobar el examen teórico</h3>
-          <p>Descubre cómo prepararte mejor con esta guía práctica… <a href="#">Leer más &raquo;</a></p>
-        </div>
-        <div class="blog-post">
-          <h3>¿Qué documentos necesitas para solicitar el brevete?</h3>
-          <p>Revisa la lista actualizada y evita contratiempos… <a href="#">Leer más &raquo;</a></p>
-        </div>
+        <!-- Reemplaza con tu Booking Page URL -->
+        <iframe src="your_booking_page_URL" scrolling="yes" width="100%" height="600" frameborder="0" allow="web-share"></iframe>
       </div>
     </section>
 
     <!-- Contacto -->
     <section id="contacto">
-      <h2><i data-feather="mail" class="icon"></i> Contacto</h2>
+      <h2><i data-feather="mail" class="icon"></i> Contáctame</h2>
       <div class="card">
         <p><strong>Luis Alberto Paucar Santiago</strong></p>
-        <p><strong>Teléfono:</strong> +51 997 627 192</p>
-        <p><strong>Email:</strong> luispaucar088@gmail.com</p>
-        <p><strong>Ubicación:</strong> Lima, Perú</p>
-
-        <!-- Formulario de contacto -->
+        <p>📞 +51 997 627 192</p>
+        <p>📧 luispaucar088@gmail.com</p>
+        <p>📍 Lima, Perú</p>
         <form action="#" method="POST">
           <input type="text" name="nombre" placeholder="Tu nombre completo" required>
           <input type="email" name="email" placeholder="Tu email" required>
           <textarea name="mensaje" placeholder="¿En qué puedo ayudarte?" rows="4" required></textarea>
           <button type="submit">Enviar mensaje</button>
         </form>
-
-        <a class="whatsapp-btn" href="https://wa.me/51997627192" target="_blank">
-          <i data-feather="message-circle" class="icon"></i> Escribir por WhatsApp
-        </a>
-
-        <div class="social-icons" style="margin-top: 1.5rem;">
+        <a class="whatsapp-btn" href="https://wa.me/51997627192" target="_blank"><i data-feather="message-circle" class="icon"></i> WhatsApp</a>
+        <div class="social-icons" style="margin-top:1.5rem;">
           <a href="https://facebook.com" target="_blank"><i data-feather="facebook"></i></a>
           <a href="https://instagram.com" target="_blank"><i data-feather="instagram"></i></a>
           <a href="https://www.tiktok.com/@luispaucarsantiag" target="_blank"><i data-feather="video"></i></a>
+        </div>
+        <h3>Encuéntrame aquí</h3>
+        <div class="map-container">
+          <iframe src="https://maps.google.com/maps?q=Lima%20Peru&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
       </div>
     </section>
@@ -130,9 +96,20 @@
     <p>&copy; 2025 Luis Alberto Paucar Santiago | Todos los derechos reservados</p>
   </footer>
 
-  <script src="https://unpkg.com/feather-icons"></script>
-  <script>
-    feather.replace();
+  <!-- Chat en vivo con Tawk.to -->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function(){
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/YOUR_PROPERTY_ID/default';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
   </script>
+
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script>feather.replace();</script>
 </body>
 </html>

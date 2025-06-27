@@ -4,73 +4,139 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Brevetes con Luis Paucar</title>
-  <!-- SEO -->
-  <meta name="description" content="Asesoría experta para tramitar tu brevete A1 en Lima. Chat en vivo, reservas, guía PDF y más.">
-  <meta name="keywords" content="brevete A1, licencia conducir, Lima, trámite brevete, chat en vivo">
+  <meta name="description" content="Asesoría experta para tramitar tu brevete A1 en Lima. Guía PDF, simulacros, kit de prácticas.">
+  <meta name="keywords" content="brevete A1, licencia conducir, Lima, trámite brevete">
   <meta property="og:title" content="Brevetes con Luis Paucar">
-  <meta property="og:description" content="Asesoría exprés para obtener tu brevete A1 en Lima. Reserva online y chat en vivo.">
+  <meta property="og:description" content="Asesoría exprés para obtener tu brevete A1 en Lima. Guía, simulacros y soporte personal.">
   <meta property="og:image" content="URL_DE_TU_IMAGEN">
   <meta property="og:url" content="https://tu-dominio.com">
   <link href="https://unpkg.com/feather-icons" rel="stylesheet">
   <style>
-    body { margin: 0; font-family: 'Segoe UI', sans-serif; background: #f7f9fb; color: #333; }
-    header { background: #004080; color: white; padding: 2rem; text-align: center; }
-    header img { width: 80px; border-radius: 50%; margin-bottom: 10px; }
-    nav { background: #003366; padding: .5rem; text-align: center; position: sticky; top: 0; z-index: 100; }
-    nav a { color: white; text-decoration: none; margin: 0 1rem; font-weight: bold; }
-    main { padding: 2rem; max-width: 1000px; margin: auto; }
-    section { margin-bottom: 3rem; }
-    .icon { vertical-align: middle; margin-right: 8px; }
-    .card { background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); margin-top: 1rem; }
-    .steps { display: flex; justify-content: space-between; flex-wrap: wrap; }
-    .step { flex: 1 1 22%; text-align: center; padding: 1rem; }
-    .cta-btn, .whatsapp-btn { display: inline-block; background: #25D366; color: white; padding: .8rem 1.5rem; border-radius: 8px; text-decoration: none; font-weight: bold; margin-top: 1rem; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: 'Segoe UI', sans-serif; background: #f7f9fb; color: #333; line-height: 1.6; }
+    header { background: #004080; color: white; padding: 3rem 1rem; text-align: center; }
+    header img { width: 100px; border-radius: 50%; display: block; margin: 0 auto 1rem; }
+    nav { background: #003366; padding: .75rem; position: sticky; top: 0; z-index: 100; }
+    nav a { color: white; text-decoration: none; margin: 0 .75rem; font-weight: bold; font-size: .95rem; }
+    nav a:hover { text-decoration: underline; }
+    main { padding: 2rem 1rem; max-width: 1100px; margin: auto; }
+    section { margin-bottom: 4rem; }
+    h2 { font-size: 2rem; margin-bottom: 1rem; color: #004080; }
+    .icon { vertical-align: middle; margin-right: 8px; color: #004080; }
+    .card { background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-top: 1rem; }
+    .cta-btn, .whatsapp-btn { display: inline-block; margin-top: 1rem; background: #25D366; color: white; padding: .8rem 1.5rem; border-radius: 8px; text-decoration: none; font-weight: bold; }
     .cta-btn { background: #ff6600; }
-    form input, form textarea { width: 100%; padding: .7rem; margin: .5rem 0 1rem; border: 1px solid #ccc; border-radius: 5px; }
+    .steps { display: flex; flex-wrap: wrap; gap: 1rem; }
+    .step { flex: 1; min-width: 200px; text-align: center; padding: 1rem; }
+    .testimonial { border-left: 4px solid #004080; padding-left: 1.25rem; margin-bottom: 1rem; font-style: italic; }
+    .blog-post { margin-bottom: 2rem; }
+    .blog-post h3 { margin-bottom: .5rem; }
+    form input, form textarea { width: 100%; padding: .8rem; margin: .5rem 0 1rem; border: 1px solid #ccc; border-radius: 5px; }
     form button { background: #004080; color: white; padding: .8rem 1.5rem; border: none; border-radius: 5px; font-size: 1rem; cursor: pointer; }
-    .testimonial { border-left: 4px solid #004080; padding-left: 1rem; margin-bottom: 1rem; font-style: italic; }
-    .blog-post { margin-bottom: 1.5rem; }
-    footer { background: #004080; color: white; text-align: center; padding: 1.5rem 1rem; }
-    .map-container { width: 100%; height: 300px; margin-top: 1rem; border-radius: 10px; overflow: hidden; }
+    form button:hover { background: #003366; }
+    .map-container { width: 100%; height: 300px; border-radius: 10px; overflow: hidden; margin-top: 1rem; }
+    footer { background: #004080; color: white; text-align: center; padding: 2rem 1rem; }
+    footer a { color: #ffd700; text-decoration: none; margin: 0 .5rem; }
+    footer a:hover { text-decoration: underline; }
+    @media (min-width: 768px) {
+      .steps { gap: 2rem; }
+      form { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+      form textarea { grid-column: span 2; }
+      .social-icons { display: flex; justify-content: center; gap: 1rem; margin: 1rem 0; }
+    }
   </style>
 </head>
 <body>
   <header>
-    <img src="https://via.placeholder.com/80.png?text=Logo" alt="Logo de empresa" />
+    <img src="https://via.placeholder.com/100.png?text=Logo" alt="Logo de empresa">
     <h1><i data-feather="truck" class="icon"></i> Brevetes con Luis Paucar</h1>
-    <p>Asesoría integral y trámites exprés para tu licencia de conducir A1</p>
+    <p>Asesoría integral y trámites exprés para tu licencia A1 en Lima</p>
   </header>
 
   <nav>
+    <a href="#sobre-mi">Sobre mí</a>
     <a href="#servicios">Servicios</a>
     <a href="#proceso">Proceso</a>
-    <a href="#productos">Productos</a>
     <a href="#testimonios">Testimonios</a>
-    <a href="#faq">FAQ</a>
     <a href="#blog">Blog</a>
-    <a href="#reserva">Reserva</a>
     <a href="#contacto">Contacto</a>
   </nav>
 
   <main>
-    <!-- Aquí puedes incluir secciones como Servicios, Proceso, Productos, Testimonios, FAQ y Blog, según tu contenido -->
-
-    <!-- Sistema de reservas -->
-    <section id="reserva">
-      <h2><i data-feather="calendar" class="icon"></i> Reserva tu día y hora</h2>
+    <section id="sobre-mi">
+      <h2><i data-feather="user" class="icon"></i> Sobre mí</h2>
       <div class="card">
-        <iframe
-          src="https://TU_EMPRESA.setmore.com"
-          scrolling="yes"
-          width="100%"
-          height="600"
-          frameborder="0"
-          allow="web-share">
-        </iframe>
+        <p>Soy <strong>Luis Alberto Paucar Santiago</strong>, con más de 10 años de experiencia ayudando a cientos de personas a obtener su brevete A1 en tiempo récord. Mi enfoque es personalizado, profesional y confiable.</p>
       </div>
     </section>
 
-    <!-- Contacto -->
+    <section id="servicios">
+      <h2><i data-feather="check-circle" class="icon"></i> Servicios</h2>
+      <div class="card">
+        <ul>
+          <li>Asesoría completa para obtener tu brevete A1</li>
+          <li>Revisión y auditoría de requisitos</li>
+          <li>Agendamiento de citas y exámenes (teórico y práctico)</li>
+          <li>Clases prácticas con kit completo</li>
+          <li>Entrega del brevete y seguimiento post-trámite</li>
+        </ul>
+        <a href="#contacto" class="cta-btn">¡Quiero mi brevete!</a>
+      </div>
+    </section>
+
+    <section id="proceso">
+      <h2><i data-feather="settings" class="icon"></i> Proceso paso a paso</h2>
+      <div class="card steps">
+        <div class="step">
+          <i data-feather="file-text"></i>
+          <h4>Requisitos</h4>
+          <p>DNI, certificado médico, comprobante bancario.</p>
+        </div>
+        <div class="step">
+          <i data-feather="book-open"></i>
+          <h4>Examen teórico</h4>
+          <p>40 preguntas – 35 correctas para aprobar.</p>
+        </div>
+        <div class="step">
+          <i data-feather="user-check"></i>
+          <h4>Examen práctico</h4>
+          <p>Recorrido guiado y personalizado.</p>
+        </div>
+        <div class="step">
+          <i data-feather="award"></i>
+          <h4>Entrega del brevete</h4>
+          <p>En mano, sin atrasos.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonios">
+      <h2><i data-feather="thumbs-up" class="icon"></i> Testimonios</h2>
+      <div class="card">
+        <div class="testimonial">“Gracias a Luis saqué mi brevete en 2 semanas. Muy profesional.” – María P.</div>
+        <div class="testimonial">“Los simulacros me prepararon completamente. Total confianza.” – Carlos R.</div>
+        <div class="testimonial">“El kit de práctica fue un gran apoyo. ¡Lo recomiendo!” – Ana M.</div>
+      </div>
+    </section>
+
+    <section id="blog">
+      <h2><i data-feather="archive" class="icon"></i> Blog y recursos</h2>
+      <div class="card">
+        <div class="blog-post">
+          <h3>5 claves para aprobar el examen teórico</h3>
+          <p>Recomendaciones prácticas para estudiar con efectividad… <a href="#">Leer más »</a></p>
+        </div>
+        <div class="blog-post">
+          <h3>Documentación necesaria para agilizar trámites</h3>
+          <p>Evita errores comunes revisando esta lista actualizada… <a href="#">Leer más »</a></p>
+        </div>
+        <div class="blog-post">
+          <h3>Cómo entrenar en casa con kit de práctica</h3>
+          <p>Aprende a usar tu kit de señalización para simular el circuito… <a href="#">Leer más »</a></p>
+        </div>
+      </div>
+    </section>
+
     <section id="contacto">
       <h2><i data-feather="mail" class="icon"></i> Contáctame</h2>
       <div class="card">
@@ -84,53 +150,31 @@
           <textarea name="mensaje" placeholder="¿En qué puedo ayudarte?" rows="4" required></textarea>
           <button type="submit">Enviar mensaje</button>
         </form>
-        <a class="whatsapp-btn" href="https://wa.me/51997627192" target="_blank"><i data-feather="message-circle" class="icon"></i> WhatsApp</a>
-        <div class="social-icons" style="margin-top:1.5rem;">
-          <a href="https://facebook.com" target="_blank"><i data-feather="facebook"></i></a>
-          <a href="https://instagram.com" target="_blank"><i data-feather="instagram"></i></a>
-          <a href="https://www.tiktok.com/@luispaucarsantiag" target="_blank"><i data-feather="video"></i></a>
+        <a href="https://wa.me/51997627192" class="whatsapp-btn"><i data-feather="message-circle" class="icon"></i> WhatsApp</a>
+        <div class="social-icons">
+          <a href="#"><i data-feather="facebook"></i></a>
+          <a href="#"><i data-feather="instagram"></i></a>
+          <a href="#"><i data-feather="video"></i></a>
         </div>
-        <h3>Encuéntrame aquí</h3>
+        <h3>Ubicación</h3>
         <div class="map-container">
-          <iframe
-            src="https://maps.google.com/maps?q=Lima%20Peru&t=&z=13&ie=UTF8&iwloc=&output=embed"
-            width="100%"
-            height="100%"
-            style="border:0;"
-            allowfullscreen=""
-            loading="lazy">
-        </iframe>
+          <iframe src="https://maps.google.com/maps?q=Lima%20Peru&output=embed" width="100%" height="100%" style="border:0;" loading="lazy"></iframe>
         </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Luis Alberto Paucar Santiago | Todos los derechos reservados</p>
+    <p>&copy; 2025 Luis Alberto Paucar Santiago</p>
+    <p>
+      <a href="#servicios">Servicios</a> •
+      <a href="#proceso">Proceso</a> •
+      <a href="#blog">Blog</a> •
+      <a href="#contacto">Contacto</a>
+    </p>
   </footer>
 
-  <!-- Chat en vivo con LiveChat -->
-  <script>
-    window.__lc = window.__lc || {};
-    window.__lc.license = TU_LIVECHAT_ID;  // Reemplaza con tu License ID
-    window.__lc.integration_name = "manual_onboarding";
-    (function(n,t,c){
-      function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}
-      var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])}, once:function(){i(["once",c.call(arguments)])}, off:function(){i(["off",c.call(arguments)])}, get:function(){if(!e._h)throw new Error("[LiveChatWidget] You can't use getters before load.");return i(["get",c.call(arguments)])}, call:function(){i(["call",c.call(arguments)])}, init:function(){
-        var s=document.createElement("script");
-        s.async=true; s.type="text/javascript";
-        s.src="https://cdn.livechatinc.com/tracking.js";
-        t.head.appendChild(s);
-      }};
-      !n.__lc.asyncInit && e.init();
-      n.LiveChatWidget = n.LiveChatWidget || e;
-    })(window, document, [].slice);
-  </script>
-
   <script src="https://unpkg.com/feather-icons"></script>
-  <script>
-    feather.replace();
-  </script>
+  <script>feather.replace();</script>
 </body>
 </html>
-

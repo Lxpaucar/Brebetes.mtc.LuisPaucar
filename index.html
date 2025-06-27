@@ -53,14 +53,20 @@
   </nav>
 
   <main>
-    <!-- Secciones previas omitidas por brevedad -->
+    <!-- Aquí puedes incluir secciones como Servicios, Proceso, Productos, Testimonios, FAQ y Blog, según tu contenido -->
 
     <!-- Sistema de reservas -->
     <section id="reserva">
       <h2><i data-feather="calendar" class="icon"></i> Reserva tu día y hora</h2>
       <div class="card">
-        <!-- Reemplaza con tu Booking Page URL -->
-        <iframe src="19215353" scrolling="yes" width="100%" height="600" frameborder="0" allow="web-share"></iframe>
+        <iframe
+          src="https://TU_EMPRESA.setmore.com"
+          scrolling="yes"
+          width="100%"
+          height="600"
+          frameborder="0"
+          allow="web-share">
+        </iframe>
       </div>
     </section>
 
@@ -69,7 +75,7 @@
       <h2><i data-feather="mail" class="icon"></i> Contáctame</h2>
       <div class="card">
         <p><strong>Luis Alberto Paucar Santiago</strong></p>
-        <p>📞 +51 997 627 192</p>
+        <p>📞 +51 997 627 192</p>
         <p>📧 luispaucar088@gmail.com</p>
         <p>📍 Lima, Perú</p>
         <form action="#" method="POST">
@@ -86,7 +92,14 @@
         </div>
         <h3>Encuéntrame aquí</h3>
         <div class="map-container">
-          <iframe src=<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15596.829295598434!2d-76.96134258934694!3d-12.23423700530313 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <iframe
+            src="https://maps.google.com/maps?q=Lima%20Peru&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy">
+        </iframe>
         </div>
       </div>
     </section>
@@ -96,20 +109,28 @@
     <p>&copy; 2025 Luis Alberto Paucar Santiago | Todos los derechos reservados</p>
   </footer>
 
-  <!-- Chat en vivo con Tawk.to -->
-  <script type="text/javascript">
-    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-    (function(){
-      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-      s1.async = true;
-      s1.src = 'https://embed.tawk.to/YOUR_PROPERTY_ID/default';
-      s1.charset = 'UTF-8';
-      s1.setAttribute('crossorigin','*');
-      s0.parentNode.insertBefore(s1, s0);
-    })();
+  <!-- Chat en vivo con LiveChat -->
+  <script>
+    window.__lc = window.__lc || {};
+    window.__lc.license = TU_LIVECHAT_ID;  // Reemplaza con tu License ID
+    window.__lc.integration_name = "manual_onboarding";
+    (function(n,t,c){
+      function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}
+      var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])}, once:function(){i(["once",c.call(arguments)])}, off:function(){i(["off",c.call(arguments)])}, get:function(){if(!e._h)throw new Error("[LiveChatWidget] You can't use getters before load.");return i(["get",c.call(arguments)])}, call:function(){i(["call",c.call(arguments)])}, init:function(){
+        var s=document.createElement("script");
+        s.async=true; s.type="text/javascript";
+        s.src="https://cdn.livechatinc.com/tracking.js";
+        t.head.appendChild(s);
+      }};
+      !n.__lc.asyncInit && e.init();
+      n.LiveChatWidget = n.LiveChatWidget || e;
+    })(window, document, [].slice);
   </script>
 
   <script src="https://unpkg.com/feather-icons"></script>
-  <script>feather.replace();</script>
+  <script>
+    feather.replace();
+  </script>
 </body>
 </html>
+
